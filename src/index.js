@@ -48,7 +48,8 @@ class Sorter {
       return this.array;
     }
     else {
-      this.array.sort(this.comparator(indices[0], indices[1]))
+      indices.sort();
+      this.comparator(this.array[indices[0]], this.array[indices[1]]);
       return this.array;
     }
   }
